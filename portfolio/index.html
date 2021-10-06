@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="00_stylesheet.css">
+  <link rel="icon" href="img/SJ.png" type="image/icon"> <!-- Favicon -->
+  <title>Signe Joensen - Multimediedesign Studerende</title>
+
+  <style>
+    /* Styling af 'slideshow' */
+    * {
+      box-sizing: border-box;
+    }
+
+    .mySlides,
+    .mySlides2 {
+      display: none;
+    }
+
+    .imgg {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .right {
+      object-position: right;
+    }
+
+    .dot,
+    .dot2 {
+      height: 10px;
+      width: 10px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 3s;
+      animation-name: fade;
+      animation-duration: 3s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: 0.8
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0.8
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="header flex fp_header">
+    <div class="logo"><a href="index.html">
+        <img src="img/logo.png" alt="">
+      </a>
+    </div>
+
+    <div class="nav flex">
+      <a href="04_work.html">Work</a>
+      <a href="02_about.html">About</a>
+      <a href="03_contact.html">Contact</a>
+    </div>
+
+    <div class="empty">
+    </div>
+  </div>
+
+  <div class="intro flex">
+    <h1>Hey! I'm Signe. Copenhagen based Multimedia Design Student with a keen appreciation for rainy days and
+      houseplants. <br> Take a look at what I do! </h1>
+  </div>
+
+  <div class="frontpage_content">
+    <div class="box flex">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <a href="05_bridges.html"><img class="imgg" src="img/bridges/brobillede.png" alt=""></a>
+        </div>
+
+        <div class="mySlides fade">
+          <a href="05_bridges.html"><img class="imgg" src="img/bridges/original.jpg" alt=""></a>
+        </div>
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+
+      <div class="description">
+        <a href="05_bridges.html">
+          <h2>Photo Editing</h2>
+        </a>
+        <p>Editing can be the most crucial part of getting a great image. In this process you can add new things or remove unwanted elements. You can obtain a different expression by fixing the light settings or adjust the colors to completely change up the look and feel of a photo. 
+          <br><br>
+        I am fairly proficient in Adobe Photoshop and Lightroom, and I’m always learning and playing around with new expressions and techniques.
+          </p>
+      </div>
+    </div>
+
+    <div class="box flex">
+      <div class="slideshow-container reverse">
+
+        <div class="mySlides2 fade">
+          <a href="06_rose_spa.html"><img class="imgg right" src="img/rose_spa/logo.png" alt=""></a>
+        </div>
+
+        <div class="mySlides2 fade">
+          <a href="06_rose_spa.html"><img class="imgg" src="img/rose_spa/bc_mock.png" alt=""></a>
+        </div>
+
+        <div class="mySlides2 fade">
+          <a href="06_rose_spa.html"><img class="imgg" src="img/rose_spa/moodboard.png" alt=""></a>
+        </div>
+
+        <div style="text-align:center">
+          <span class="dot2"></span>
+          <span class="dot2"></span>
+          <span class="dot2"></span>
+        </div>
+      </div>
+
+      <div class="description">
+        <a href="06_rose_spa.html">
+          <h2>Branding</h2>
+        </a>
+        <p>Pairing your brand with a great logo, the perfect font and a pleasing color palette will make it seem well put together. It creates emotion, makes it look more cohesive and professional and will help the customer associate your logo with your specific branch of business. 
+          <br> <br>
+          Whether you need a single logo, a full brand guide or any print collateral, with my extensive knowledge of Adobe Illustrator and InDesign I can surely take care of the job. 
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <script>
+    var slideIndex = 0;
+    var slideIndex2 = 0;
+    showSlides();
+    showSlide2();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 5000); // Skifter billede hver 5. sekund
+    }
+
+
+    function showSlide2() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides2");
+      var dots = document.getElementsByClassName("dot2");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex2++;
+      if (slideIndex2 > slides.length) { slideIndex2 = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex2 - 1].style.display = "block";
+      dots[slideIndex2 - 1].className += " active";
+      setTimeout(showSlide2, 5000);
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex{
+    display: flex;
+}
+
+.img{
+    width: 100%;
+}
+
+html,body{
+    height: 100%;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.4em;
+    letter-spacing: 0.02em;
+}
+
+h2{
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+a{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* styling af header */
+.header{
+    background-color: #DCF2E5;
+    justify-content: space-between;
+    padding: 60px 20px 20px 0;
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.fp_header{
+    background-color: transparent;
+    height: 170px;
+    border: none;
+}
+
+.nav{
+    width: 250px;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    margin-left: 120px;
+}
+.logo img{
+    width: 100%;
+}
+
+.empty{
+width: 170px;
+margin-left: 140px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: rgb(64, 99, 99);
+}
+
+.underline{
+    text-decoration: underline !important;
+}
+
+/* styling af frontpage */
+.frontpage_content{
+    padding-bottom: 100px;
+}
+.intro{
+    background-color: rgb(204, 236, 218);
+    text-align: center;
+    align-items: center;
+}
+
+.intro h1{
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2em;
+    font-size: 1.8em;
+    padding: 70px 170px 70px 170px;
+}
+.box{
+    justify-content: space-around;
+    padding: 100px 10% 0 10%;
+}
+
+.description{
+width: 75%;
+padding: 0 60px 0 60px;
+}
+.description h2{
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.description a{
+    text-decoration: none;
+}
+
+.reverse{
+    order: 1;
+}
+
+
+/* styling af about page */
+.rooftop_image{
+    width: 25%;
+    float: left;
+    margin-right: 100px;
+    margin-bottom: 80px;
+}
+
+.about_me{
+    margin-right: 100px;
+}
+
+.about{
+    margin: 100px;
+}
+
+/* styling af contact page */
+.contact_formula, .contact_formula_sent{
+    width: 70%;
+}
+.contact_formula h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 60%;
+}
+.empty2{
+    width: 19%;
+}
+
+.contact{
+    text-align: center;
+}
+
+::placeholder{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#send{ 
+    width: 140px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#send:hover{
+    background-color: #F4FDF8;
+}
+
+input, textarea{
+    border-radius: 0;
+    background-color: transparent;
+    border-width: 1px;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.4em;
+    letter-spacing: 0.02em;
+}
+
+input{
+   height: 40px;
+}
+
+#name, #email{
+    width: 27.25%;
+    padding-left: 10px;
+}
+
+textarea{
+    height: 250px;
+    width: 60%;
+    resize: none;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.my_info{
+    background-color: #F4FDF8;
+    border-left: 1px solid rgb(177, 177, 177);
+    width: 30%;
+    height: 675px;
+    flex-direction: column;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
+.my_info h4{ 
+    text-align: right;
+    margin: 150px 100px 50px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    }
+
+.my_info a{
+    text-decoration: none;
+    text-align: right;
+    font-weight: 300;
+}
+
+.socials{
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.icon{
+    height: 22px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.info{
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.contact_formula_sent h2,.contact_formula_sent p{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+/* styling af work page */
+.work_page, .bridges_page, .rose_page{
+    height: 85%;
+}
+
+.work{
+    overflow: scroll;
+    width: 75%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+.square{
+    border: 1px solid lightgray;
+    width: 400px;
+    height: 310px;
+    margin: 25px 15px 25px 15px;
+}
+.square p{ /* remove when other boxes are filled*/
+    text-align: center;
+    padding-top: 140px;
+}
+
+.bridges{
+    background-image: url(img/bridges/brobillede.png);
+    background-size: cover;
+    background-position: center;
+    border: none; /* remove when other boxes are filled*/
+    transition: 0.3s;
+}
+.bridges:hover{
+    background-image: url(img/bridges/original.jpg);
+}
+
+.rose{
+    background-image: url(img/rose_spa/logo.png);
+    background-size: cover;
+    background-position: right;
+    border: none; /* remove when other boxes are filled*/
+    transition: 0.3s;
+}
+.rose:hover{
+    background-image: url(img/rose_spa/store_front.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.left_menu{ 
+    background-color: #F4FDF8;
+    flex-direction: column;
+    width: 25%;
+    height: 85%;
+    padding: 100px 0 0 60px;
+    border-right: 1px solid rgb(177, 177, 177);
+}
+
+.left_menu ol{
+    list-style-type: none;
+    padding-top: 50px;
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.left_menu h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #4A4A4A;
+    font-weight: 600;
+    font-size: 3.3em;
+    margin-right: 40px;
+}
+
+/* styling af individuelle work pages venstre side*/
+.left_menu h2{
+    font-family: 'Cormorant Garamond', serif;
+    color: #4A4A4A;
+    font-weight: 400;
+    font-size: 3em;
+    margin-right: 40px;
+}
+
+.left_menu p{
+    margin-right: 60px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.left_menu ul{
+    list-style-type: circle;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.left_menu li{
+    margin-top: 10px;
+}
+
+/* styling af bridges page */
+.bridge_square{
+    width: 75%;
+    height: 550px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    }
+
+.after{
+    background-image: url(img/bridges/brobillede.png);
+    background-size: cover;
+    background-position: top;
+}
+.before{
+    background-image: url(img/bridges/original.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+/* styling af rose page */
+.rose_square{
+    width: 75%;
+    height: 550px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    }
+.rose_logo{
+    background-image: url(img/rose_spa/logo.png);
+    background-size: cover;
+    background-position: right;
+}
+.logo_pack{
+    background-image: url(img/rose_spa/logo_pack.png);
+    background-size: cover;
+    background-position: center;
+}
+.moodboard{
+    background-image: url(img/rose_spa/moodboard.png);
+    background-size: cover;
+    background-position: center;
+}
+.rose_square2{
+    width: 24.4%;
+    height: 200px;
+    margin: 10px 5px 10px 5px;
+    }
+
+.invi{
+    background-image: url(img/rose_spa/invitation_mock.png);
+    background-size: cover;
+    background-position: center;
+}
+.bc{
+    background-image: url(img/rose_spa/bc_mock.png);
+    background-size: cover;
+    background-position: center;
+}
+.bc_two{
+    background-image: url(img/rose_spa/bc_mock2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.rose_square3{
+    width: 37%;
+    height: 210px;
+    margin: 10px 5px 10px 5px;
+    }
+
+.towel{
+    background-image: url(img/rose_spa/towel_mock.png);
+    background-size: cover;
+    background-position: center;
+}
+.stationary{
+    background-image: url(img/rose_spa/stationary.png);
+    background-size: cover;
+    background-position: center;
+}
+.store_front{
+    background-image: url(img/rose_spa/store_front.png);
+    background-size: cover;
+    background-position: center;
+}
